@@ -28,9 +28,10 @@
     background-color: #11466e;
     width: 80%;
     margin: 0 auto;
-    height: 50vh;
+    height: auto;
     padding-top: 20px;
     margin-top: 30px;
+    padding-bottom: 3rem;
 }
 
 #Products{
@@ -505,7 +506,7 @@ background-color: black;
     /* align-items: center; */
     justify-content: space-between;
     display: flex;
-    height: 20vh;
+    height: 21vh;
 }
 
 
@@ -529,6 +530,48 @@ padding-top: 60px;
     max-height: 100%;
 }
 
+#ourvision1{
+    width: 80%;
+    background-color: #0e3959;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+}
+
+#ourvisiontitle{
+    padding-top: 1rem;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    text-decoration: none;
+}
+
+
+
+#ourvisiontitle1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    margin-left: 3rem;
+    text-decoration: none;
+    margin-right: 3rem;
+}
+
+#ourvision{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    justify-content: space-between;
+    display: block;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+}
 
 
 @media (max-width:695px){
@@ -782,15 +825,11 @@ header .navbar a{
         font-size: 2rem;
     }
 
-    #aboutus{
-        height: 37vh;
-    }
+
 }
 
 @media (max-width:740px){
-    #aboutus{
-        height: 40vh;
-    }
+
 
     #aboutustitle{
         display: flex;
@@ -799,39 +838,17 @@ header .navbar a{
     }
 }
 
-@media (max-width:892px){
-    #aboutus{
-        height: 55vh;
-    }
-}
 
-@media (max-width:808px){
-    #aboutus{
-        height: 57vh;
-    }
-}
-
-@media (max-width:744px){
-    #aboutus{
-        height: 60vh;
-    }
-}
 
 @media (max-width:724px){
-    #aboutus{
-        height: 50vh;
-    }
+
 
     #aboutusmain{
         font-size: 1.7rem;
     }
 }
 
-@media (max-width:636px){
-    #aboutus{
-        height: 60vh;
-    }
-}
+
 
 @media (max-width:564px){
     #aboutusmain{
@@ -845,27 +862,49 @@ header .navbar a{
     }
 }
 
-@media (max-width:471px){
-    #aboutus{
-        height: 65vh;
-    }
-}
-
-
-@media (max-width:410px){
-    #aboutus{
-        height: 73vh;
-    }
-}
-
-@media (max-width:369px){
-    #aboutus{
-        height: 78vh;
-    }
-}
 
 @media (max-width:375px){
     #aboutus{
         font-size: 1rem;
     }
 }
+
+
+@media (max-width:478px){
+
+    #ourvisiontitle{
+        font-size: 3.5rem;
+    }
+
+
+    #ourvisiontitle1{
+        font-size: 2.7rem;
+    }
+
+
+    #ourvision{
+        font-size: 2.6rem;
+    }
+
+}
+
+
+@media (max-width:396px){
+    
+    #ourvisiontitle{
+        font-size: 2.7rem;
+    }
+
+
+    #ourvisiontitle1{
+        font-size: 2rem;
+    }
+
+
+    #ourvision{
+        font-size: 2rem;
+    }
+
+
+}
+
