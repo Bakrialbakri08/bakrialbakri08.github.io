@@ -553,6 +553,10 @@ padding-top: 60px;
     max-height: 100%;
 }
 
+#EBAYQR{
+    width: 50%;
+}
+
 #ourvision1{
     width: 80%;
     background-color: #0e3959;
@@ -705,7 +709,11 @@ padding-top: 60px;
 
 
 
-
+@media (max-width:820px){
+    #EBAYQR{
+        width: 50%;
+    }
+}
 
 
 
