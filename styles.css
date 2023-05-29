@@ -444,12 +444,15 @@ background-color: black;
 
 .sci {
     margin-top: 5px;
-    display: flex;
+    /* display: flex; */
 }
 
 #CM{
     background-color: #11466e;
+}
 
+#QRWA{
+    width: 100%;
 }
 
 #FB{
