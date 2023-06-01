@@ -447,27 +447,26 @@ background-color: black;
     /* display: flex; */
 }
 
-#CM{
-    background-color: #11466e;
-}
-
-#QRWA{
-    width: 100%;
-}
-
-#FB{
-    font-size: 2.5rem;
+.qrcodes{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
-    color: #fff;
-    text-align: center;
+
+}
+
+#EBAYQR{
+    width: 50%;
+
 }
 
 #FBQR{
-    width: 85%;
-    height: 85%;
-    display: flex;
-    margin: 0 auto;
-    margin-top: 5px;
+    width: 50%;
+}
+
+#QRWA{
+    width: 150%;
 }
 
 .sci li{
@@ -548,14 +547,7 @@ padding-top: 60px;
     padding-top: 60px;
 }
 
-#QRWA{
-    max-width: 100%;
-    max-height: 100%;
-}
 
-#EBAYQR{
-    width: 50%;
-}
 
 #ourvision1{
     width: 80%;
