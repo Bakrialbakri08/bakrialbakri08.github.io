@@ -664,8 +664,20 @@ padding-top: 60px;
 
 .lang-menu{
     margin-top: 5px;
-    position: relative;
+    position: fixed;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
