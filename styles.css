@@ -701,6 +701,14 @@ padding-top: 60px;
 }
 
 
+@media (max-width: 991px){
+
+    .qrcodes{
+        margin: 0 auto;
+
+    }
+}
+
 
 
 
