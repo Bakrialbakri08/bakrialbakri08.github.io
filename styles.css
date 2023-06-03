@@ -679,6 +679,14 @@ padding-top: 60px;
     color: #fff;
 }
 
+.qrcodestext a:hover{
+    transition: 0.5s;
+    text-decoration: none;
+    color: #b6b6b8;
+}
+
+
+
 .qrcodes1 img{
     width: 150px;
 }
