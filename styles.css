@@ -16,6 +16,11 @@
     height: 100%;
 }
 
+#house{
+    padding-right: 1px;
+    margin-right: 1px;
+}
+
 .inputBox{
     font-size: 1.1rem;
     color: #161e5f;
@@ -721,7 +726,10 @@ padding-top: 60px;
 
 
 
-
+#infocard{
+    padding-right: 5px;
+    margin-right: 5px;
+}
 
 
 
