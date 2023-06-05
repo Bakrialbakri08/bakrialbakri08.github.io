@@ -650,45 +650,69 @@ padding-top: 60px;
     position: relative;
 }
 
-.barametallqr{
-    width: 240px;
-    height: 260px;
-    background-color: #11466e;
+.qrcodes{
+    height: 290px;
+    width: 190px;
+    background-color: #fff;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+.qrcodes img{
+    width: 130px;
+    background-color: #fff;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
-
+    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
-.barametallqr img{
-    width: 200px;
-    box-shadow: #333 10px;
-}
-
-.qrcodestext{
-    width: 240px;
-    height: auto;
-    font-size: 3rem;
+#qrbtn{
+    width: 150px;
+    height: 50px;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
     background-color: #11466e;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    margin-bottom: 0;
+    border-radius: 1px;
+    border-color: #333;
     text-decoration: none;
     color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+    cursor: pointer;
 }
 
-.qrcodestext a{
-    text-decoration: none;
-    color: #fff;
+ #qrbtn:hover{
+    transition: 0.6s;
+    background-color: #ccc;
+    color: #11466e;
 }
 
-.qrcodestext a:hover{
-    transition: 0.5s;
+
+
+#qrbtn i{
+    color: #ccc;
     text-decoration: none;
-    color: #b6b6b8;
+    padding: 1px 1px 1px 1px;
+    margin: 1px 1px 1px 1px;
+    padding-left: 6px;
+    margin-left: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+    padding-top: 1px;
+    margin-top: 1px;
 }
+
+
 
 
 
