@@ -143,6 +143,21 @@ bottom: 0;
     padding-top: 7rem;
 }
 
+.barap{
+    width: 80%;
+    background-color: #11466e;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    height: 150px;
+}
+
+#h1p{
+    padding-top: 10px;
+    font-size: 4rem;
+}
+
 
 
 /* #h1mobile{
@@ -674,9 +689,9 @@ padding-top: 60px;
 
 #qrbtn{
     width: 150px;
-    height: 50px;
-    padding-top: 1rem;
-    margin-top: 1rem;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1096,4 +1111,3 @@ header .navbar a{
 
 
 }
-
