@@ -1,18 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
+body {
     box-sizing: border-box;
-    outline: none;
-    border: none;
-    /* text-decoration: capitalize; */
     font-family: 'Roboto Slab', serif;
 }
 
 #logo{
-    width: 14rem;
+    width: 150px;
     height: 100%;
 }
 
@@ -31,12 +26,7 @@
 
 #aboutus{
     background-color: #11466e;
-    width: 80%;
-    margin: 0 auto;
-    height: auto;
-    padding-top: 20px;
-    margin-top: 30px;
-    padding-bottom: 3rem;
+    padding: 100px 0;
 }
 
 #Products{
@@ -44,13 +34,12 @@
     background-color: #fff;    
 }
 
-#aboutusmain{
-    width: 95%;
-    /* padding-right: 1rem; */
-}
 #productsh1{
     color: #11466e;
     font-weight: 500;
+    border-bottom: 3px solid #11466e;
+    padding-bottom: 5px;
+    display: inline-block;
 }
 
 
@@ -74,26 +63,24 @@ header {
     left: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+    justify-content: space-around;
+    padding: 10px 0;
     background: #f7f7f7;
     z-index: 1001;
+    border-bottom: 3px solid #0e3959;
 }
 
 
 
 header .logo{
-    font-size: 3.5rem;
-    color: white;
-    padding: 0.4rem;
-    text-decoration: none;
+    display: inline-block;
+
 }
 
 header .navbar a{
-    margin: 0 0.8rem;
+    margin: 0 15px;
     font-size: 1.9rem;
     color: #161e5f;
-    padding: 0.4rem;
     text-decoration: none;
     font-weight: 700;
 }
@@ -116,24 +103,72 @@ header .fa-bars{
 
 .home .home-slid {
 position: relative;
+width: 100%;
+height: 100vh;
 }
 
 .home .home-slid::before{
 content: "";
-/* background: rgba(0, 0, 0, 0.3); */
+background: rgba(14, 57, 89, 0.4);
 position: absolute;
 top: 0;
 left: 0;
 right: 0;
 bottom: 0;
+z-index: 2;
+}
+
+.home .home-slid::after{
+content: "";
+background-image: url("images/cern.jpg");
+background-origin: center center;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 1;
+    background-clip: border-box;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar ul {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.swiper-slide .content {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+
+.swiper-slide .content p {
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    margin: 0;
+    width: 100%;
+    text-align: center;
 }
 
 #helloworld{
-    position: absolute;
     color: #fff;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 3rem;
+    border-bottom: 5px solid #fff;
+    font-size: 41px;
+    margin: 0 0 20px;
 }
 
 #image1{
@@ -166,28 +201,23 @@ bottom: 0;
     align-items: center;
     justify-content: center;
     display: flex;
-} */ */
+} */
 
 
-.products{
-    background: #fff;
+.pros {
+    padding: 100px 0;
+    color: #fff;
+    background-color: #f7f7f7;
 }
 
 #contacth1{
     font-size: 10rem;
 }
 
-.contact1{
-    width: 90%;
-    margin: 0 auto;
-}
-
-
 
 
 .imagestext{
     display: flex;
-    width: 80%;
     margin: 0 auto;
 }
 
@@ -226,19 +256,18 @@ bottom: 0;
 }
 
 #aboutustitle{
-    color: #161e5f;
+    border-bottom: 3px solid #fff;
+    display: inline-block;
 }
 
 .imagestext .image img {
+    min-width: 700px;
     height: 400px;
 }
 
 #productsh1{
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        font-size: 4rem;
-      
+    font-size: 42px;
+    margin: 0 0 20px;
 }
 
 #mobileimage1{
@@ -282,16 +311,9 @@ background-color: black;
 }
 
 .contact1{
-    margin-top: 0;
-    padding-top: 0;
+    padding: 100px 0;
     /* dont forget to change the background color  */
-    background-color: white;
-}
-
-.contactus{
-    position: relative;
-    width: 100%;
-    padding: 40px 6.1rem;
+    background-color: #fff;
 }
 
 .contactus .title {
@@ -303,7 +325,11 @@ background-color: black;
 
 .contactus .title h2{
     color: #161e5f;
-    font-weight: 500;
+    font-size: 42px;
+    padding: 0 0 5px;
+    margin: 0 0 20px;
+    border-bottom: 3px solid #11466e;
+    display: inline-block;
 }
 
 .form{
@@ -329,7 +355,6 @@ background-color: black;
     position: relative;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-template-areas: "form info" "form map";
     grid-gap: 20px;
     margin-top: 20px;
@@ -496,15 +521,18 @@ background-color: black;
 }
 
 #aboutustitle{
-    font-size: 3rem;
-    padding-left: 100px;
-    color: white;
+    font-size: 42px;
+    padding: 0 0 5px;
+    margin: 0 0 20px;
+    color: #fff;
 }
 
 #aboutusmain{
-    font-size: 2rem;
-    padding-left: 25px;
-    color: white;
+    font-size: 20px;
+    padding: 0;
+    margin: 0 0 0 10px;
+    color: #fff;
+    width: 60%;
 }
 
 #whoweare{
@@ -520,13 +548,7 @@ background-color: black;
 }
 
 #copyrightfooter{
-    margin: 0 0 10;
-    padding-bottom: 10px;
     background-color: #333;
-    /* align-items: center; */
-    justify-content: space-between;
-    display: flex;
-    height: 21vh;
 }
 
 
@@ -540,54 +562,41 @@ padding-top: 60px;
 
 #copyright{
     color: #fff;
-    font-size: 1.5rem;
-    padding-left: 60px;
-    padding-top: 60px;
+    font-size: 16px;
+    margin: 0;
+    padding: 20px 0;
 }
 
 
 
 #ourvision1{
-    width: 80%;
     background-color: #0e3959;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 4rem;
-    margin-top: 5rem;
+    padding: 100px 0;
 }
 
 #ourvisiontitle{
-    padding-top: 1rem;
-    font-size: 4rem;
+    font-size: 42px;
     font-weight: 500;
     color: #fff;
-    margin-left: 3rem;
-    margin-right: 3rem;
     text-decoration: none;
+    margin: 0 0 20px;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    display: inline-block;
 }
 
-
-
 #ourvisiontitle1{
-    font-size: 3rem;
-    font-weight: 900;
+    font-size: 24px;
     color: #fff;
-    margin-left: 3rem;
     text-decoration: none;
-    margin-right: 3rem;
+    margin: 0 0 10px 10px;
 }
 
 #ourvision{
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 16px;
     color: #fff;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    display: flex;
-    justify-content: space-between;
+    margin: 0 0 0 10px;
     display: block;
-    margin-bottom: 3rem;
-    padding-bottom: 3rem;
 }
 
 
@@ -595,19 +604,15 @@ padding-top: 60px;
 .selected-lang{
     text-decoration: none;
     cursor: pointer;
-    padding-right: 10px;
-    margin-right: 10px;
     font-size: 1.9rem;
     color: #161e5f;
     font-weight: 700;
     line-height: 2;
-    width: 100px;
 }
 
 .selected-lang:before{
     text-decoration: none;
-    padding-right: 10px;
-    margin-right: 10px;
+    margin-right: 100px;
     content: '';
     width: 100px;
     height: 32px;
@@ -628,14 +633,14 @@ padding-top: 60px;
     background-color: #f2f2f2;
 }
 
-.lang-menu ul li a:before{
+/*.lang-menu ul li a:before{
     text-decoration: none;
     padding-right: 10px;
     margin-right: 10px;
     content: '';
     width: 100px;
     height: 32px;
-}
+}*/
 
 .lang-menu ul{
     text-decoration: none;
@@ -648,7 +653,7 @@ padding-top: 60px;
     display: none;
     position: absolute;
     top: 10;
-    left: 0;
+    right: 0;
 }
 
 .lang-menu:hover ul{
@@ -661,18 +666,15 @@ padding-top: 60px;
 }
 
 .lang-menu{
-    margin-top: 5px;
     position: relative;
 }
 
 .qrcodes{
-    height: 290px;
-    width: 190px;
     background-color: #fff;
-    display: inline;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0px 35px rgba(0, 0, 0, 0.3);
+    padding: 20px 0;
 }
 
 
@@ -683,8 +685,7 @@ padding-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
-    padding-top: 2rem;
+    margin-top: 50px;
 }
 
 #qrbtn{
@@ -784,11 +785,7 @@ padding-top: 60px;
         }
         
         #copyright{
-            color: #fff;
-            font-size: 1.5rem;
-            padding-left: 10px;
-            padding-top: 60px;
-            padding-right: 30px;
+            padding-left: 20px;
         }
         
 
@@ -927,6 +924,10 @@ header .navbar a{
 
 @media(max-width:855px){
 
+    .navbar ul li {
+        display: block;
+    }
+
     header .fa-bars{
         display: block;
     }
@@ -936,15 +937,20 @@ header .navbar a{
         /* top: 7.5rem; */
         top: 1000rem;
         left: 0;
-        text-align: center;
+        text-align: left;
         background: #11466e;
         width: 100%;
         opacity: 0.97;
         transition: 0s ease-in-out;
-}
+        display: block;
+    }
+
+    header .navbar a i {
+        color: #fff !important;
+    }
 
     header .navbar.active{
-    top: 7.5rem;
+    top: 7rem;
     }
 
     header .navbar a{
@@ -1026,9 +1032,13 @@ header .navbar a{
 
 @media (max-width:790px){
     #aboutusmain{
-        font-size: 2rem;
+        width: auto;
+        margin: 0 20px;
     }
 
+    #aboutustitle {
+        margin-left: 20px;
+    }
 
 }
 
@@ -1036,9 +1046,7 @@ header .navbar a{
 
 
     #aboutustitle{
-        display: flex;
-        align-items: center;
-        padding-left: 20px;
+        margin-left: 20px;
     }
 }
 
@@ -1048,7 +1056,7 @@ header .navbar a{
 
 
     #aboutusmain{
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
 }
 
@@ -1056,7 +1064,7 @@ header .navbar a{
 
 @media (max-width:564px){
     #aboutusmain{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -1078,6 +1086,7 @@ header .navbar a{
 
     #ourvisiontitle{
         font-size: 3.5rem;
+        margin-left: 10px;
     }
 
 
