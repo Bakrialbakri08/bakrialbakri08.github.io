@@ -1,219 +1,3 @@
-<?php
-
-    function translate_page($index, $lang) {
-
-        if ($lang == 'en') {
-            $phrases = array(
-                'Home',
-                'Our Vision',
-                'Interests',
-                'About Us',
-                'Get in touch',
-                'INDUSTRIAL MACHINES EXPERTS!',
-                'YOU WILL NEVER REGRET WORKING WITH US',
-                'How do we work?',
-                'It\'s as simple as A B C yet very accommodating.',
-                'A: We purchase your industrial machines and electric equipment.',
-                'B: We refurbish them.',
-                'C: We distribute the products to individuals and businesses that are in need.',
-                'Our interest of goods',
-                'Electric motors <br>Gearboxes<br>Pumps<br>Hydraulic parts',
-                'Valves',
-                'Bearings',
-                'Automation and Pneumatics',
-                'Transmissions',
-                'Machinery',
-                'Spare parts',
-                'About Us',
-                'As a startup company, we are committed to environmental sustainability and are passionate about promoting the principles of recycling and reusing industrial goods. Our goal is to encourage factories to reduce their production and minimize pollution by adopting eco-friendly practices that prioritize the efficient use of resources. We believe that by spreading awareness about the importance of recycling and reuse, we can make a positive impact on the environment and build a more sustainable future.',
-                'Get In Touch With Us',
-                'Press here to get for all information you need',
-                'Copyright'
-            );
-        } else if ($lang == 'ar') {
-            $phrases = array(
-				'الرئيسية',
-				'رؤيتنا',
-				'الإهتمامات',
-				'معلومات عنا',
-				'ابقى على تواصل',
-				'خبراء الآلات الصناعية!',
-				'لن تندم أبدًا على العمل معنا',
-				'كيف نعمل؟',
-				'الأمر بسيط مثل A B C ولكنه ملائم للغاية.',
-				'ج: نشتري آلاتك الصناعية ومعداتك الكهربائية.',
-				'ب: نقوم بتجديدها.',
-				'ج: نوزع المنتجات على الأفراد والشركات المحتاجة',
-				'مصلحتنا في البضائع',
-				'محركات كهربائية <br> علب التروس <br> مضخات <br> الأجزاء الهيدروليكية',
-				'الصمامات',
-				'رمان',
-				'الأتمتة وضغط الهواء',
-				'الإرسال',
-				'الات',
-				'قطعة منفصلة',
-				'معلومات عنا',
-				'بصفتنا شركة ناشئة ، نحن ملتزمون بالاستدامة البيئية ومتحمسون لتعزيز مبادئ إعادة التدوير وإعادة استخدام السلع الصناعية. هدفنا هو تشجيع المصانع على تقليل إنتاجها وتقليل التلوث من خلال تبني ممارسات صديقة للبيئة تعطي الأولوية للاستخدام الفعال للموارد. نعتقد أنه من خلال نشر الوعي حول أهمية إعادة التدوير وإعادة الاستخدام ، يمكننا إحداث تأثير إيجابي على البيئة وبناء مستقبل أكثر استدامة.',
-				'ابق على تواصل معنا',
-				'اضغط هنا للحصول على جميع المعلومات التي تحتاجها',
-				'حقوق النشر محفوظة'
-            );
-        } else if ($lang == 'sv') {
-            $phrases = array(
-                'Hem',
-                'Vår vision',
-                'Intressen',
-                'Om oss',
-                'Komma i kontakt',
-                'EXPERTER på INDUSTRIMASKINER!',
-                'DU KOMMER ALDRIG ÅNGRA ATT DU ARBETAT MED OSS',
-                'Hur arbetar vi?',
-                'Det är så enkelt som A B C men ändå väldigt tillmötesgående.',
-                'A: Vi köper dina industrimaskiner och elektrisk utrustning.',
-                'B: Vi renoverar dem.',
-                'C: Vi distribuerar produkterna till individer och företag som är i behov.',
-                'Vårt intresse av varor',
-                'Elektriska motorer <br>Växellådor<br>Pumpar<br>Hydrauliska delar',
-                'ventiler',
-                'Lager',
-                'Automation och pneumatik',
-                'Transmissioner',
-                'Maskineri',
-                'Reservdelar',
-                'Om oss',
-                'Som ett nystartat företag är vi engagerade i miljömässig hållbarhet och brinner för att främja principerna för återvinning och återanvändning av industrivaror. Vårt mål är att uppmuntra fabriker att minska sin produktion och minimera föroreningar genom att anta miljövänliga metoder som prioriterar effektiv användning av resurser. Vi tror att genom att sprida medvetenhet om vikten av återvinning och återanvändning kan vi ha en positiv inverkan på miljön och bygga en mer hållbar framtid.',
-                'Kontakta oss',
-                'Tryck här för att få all information du behöver',
-                'Upphovsrätt'
-            );
-        } else if ($lang == 'de') {
-            $phrases = array(
-                'Heim',
-                'Unsere Vision',
-                'Interessen',
-                'Über uns',
-                'In Kontakt kommen',
-                'INDUSTRIEMASCHINEN-EXPERTEN!',
-                'Sie werden es nie bereuen, mit uns zusammengearbeitet zu haben',
-                'Wie arbeiten wir?',
-                'Es ist so einfach wie A B C und dennoch sehr zuvorkommend.',
-                'A: Wir kaufen Ihre Industriemaschinen und Elektrogeräte.',
-                'B: Wir renovieren sie.',
-                'C: Wir verteilen die Produkte an bedürftige Privatpersonen und Unternehmen.',
-                'Unser Wareninteresse',
-                'Elektromotoren <br>Getriebe<br>Pumpen<br>Hydraulikteile',
-                'Ventile',
-                'Lager',
-                'Automatisierung und Pneumatik',
-                'Übertragungen',
-                'Maschinen',
-                'Ersatzteile',
-                'Über uns',
-                'Als Startup-Unternehmen engagieren wir uns für ökologische Nachhaltigkeit und fördern mit Leidenschaft die Prinzipien des Recyclings und der Wiederverwendung von Industriegütern.“ Unser Ziel ist es, Fabriken zu ermutigen, ihre Produktion zu reduzieren und die Umweltverschmutzung zu minimieren, indem wir umweltfreundliche Praktiken einführen, bei denen die effiziente Nutzung von Ressourcen im Vordergrund steht. „Wir glauben, dass wir durch die Sensibilisierung für die Bedeutung von Recycling und Wiederverwendung einen positiven Einfluss auf die Umwelt haben und eine nachhaltigere Zukunft aufbauen können.',
-                'Nehmen Sie Kontakt mit uns auf',
-                'Klicken Sie hier, um alle Informationen zu erhalten, die Sie benötigen',
-                'Urheberrechte ©'
-            );
-        } else if ($lang == 'nl') {
-            $phrases = array(
-                'Thuis',
-                'Onze visie',
-                'Interesses',
-                'Over ons',
-                'Neem contact op',
-                'INDUSTRIËLE MACHINES EXPERTS!',
-                'JE ZULT NOOIT SPIJT HEBBEN MET ONS TE WERKEN',
-                'Hoe werken we?',
-                'Het is zo simpel als A B C en toch erg meegaand.',
-                'A: Wij kopen uw industriële machines en elektrische apparatuur.',
-                'B: We renoveren ze.',
-                'C: We distribueren de producten naar particulieren en bedrijven die in nood zijn.',
-                'Ons belang van goederen',
-                'Elektromotoren <br>Versnellingsbakken<br>Pompen<br>Hydraulische onderdelen',
-                'Kleppen',
-                'Lagers',
-                'Automatisering en pneumatiek',
-                'Transmissies',
-                'Machines',
-                'Reserveonderdelen',
-                'Over ons',
-                'Als startend bedrijf zetten we ons in voor ecologische duurzaamheid en zijn we gepassioneerd over het promoten van de principes van recycling en hergebruik van industriële goederen. Ons doel is om fabrieken aan te moedigen hun productie te verminderen en vervuiling te minimaliseren door milieuvriendelijke praktijken toe te passen die prioriteit geven aan het efficiënte gebruik van hulpbronnen. Wij geloven dat we door bewustwording over het belang van recycling en hergebruik te verspreiden, een positieve impact kunnen hebben op het milieu en kunnen bouwen aan een duurzamere toekomst.',
-                'Neem contact op met ons',
-                'Druk hier voor alle informatie die je nodig hebt',
-                'Auteursrechten'
-            );
-        } else if ($lang == 'it') {
-            $phrases = array(
-                'Casa',
-                'La nostra visione',
-                'Interessi',
-                'Chi siamo',
-                'Mettiti in contatto',
-                'ESPERTI DI MACCHINE INDUSTRIALI!',
-                'NON TI PENTIRAI MAI DI LAVORARE CON NOI',
-                'Come lavoriamo?',
-                'È semplice come A B C ma molto accomodante.',
-                'A: Acquistiamo le tue macchine industriali e apparecchiature elettriche.',
-                'B: Li ristrutturiamo.',
-                'C: Distribuiamo i prodotti a privati e aziende che ne hanno bisogno.',
-                'Il nostro interesse per le merci',
-                'Motori elettrici <br>Riduttori<br>Pompe<br>Parti idrauliche',
-                'Valvole',
-                'Cuscinetti',
-                'Automazione e pneumatica',
-                'Trasmissioni',
-                'Macchinari',
-                'Pezzi di ricambio',
-                'Chi siamo',
-                'In qualità di azienda startup, ci impegniamo per la sostenibilità ambientale e siamo appassionati di promuovere i principi del riciclo e del riutilizzo dei beni industriali. Il nostro obiettivo è incoraggiare le fabbriche a ridurre la loro produzione e minimizzare l\'inquinamento adottando pratiche eco-compatibili che diano la priorità all\'uso efficiente delle risorse. Crediamo che diffondendo la consapevolezza sull\'importanza del riciclo e del riutilizzo, possiamo avere un impatto positivo sull\'ambiente e costruire un futuro più sostenibile.',
-                'Mettiti in contatto con noi',
-                'Premi qui per ottenere tutte le informazioni di cui hai bisogno',
-                'Diritto d\'autore'
-            );
-        } else if ($lang == 'fr') {
-            $phrases = array(
-                'Maison',
-                'Notre vision',
-                'Intérêts',
-                'À propos de nous',
-                'Entrer en contact',
-                'EXPERTS EN MACHINES INDUSTRIELLES!',
-                'VOUS NE REGRETTEREZ JAMAIS DE TRAVAILLER AVEC NOUS',
-                'Comment travaillons-nous?',
-                'C\'est aussi simple que A B C mais très accommodant.',
-                'A : Nous achetons vos machines industrielles et vos équipements électriques.',
-                'B: Nous les rénovons.',
-                'C: Nous distribuons les produits aux particuliers et aux entreprises qui en ont besoin.',
-                'Notre intérêt des biens',
-                'Moteurs électriques <br>Boîtes de vitesses<br>Pompes<br>Pièces hydrauliques',
-                'Valves',
-                'Roulements',
-                'Automatisme et Pneumatique',
-                'Transmission',
-                'Machinerie',
-                'Des pièces de rechange',
-                'À propos de nous',
-                ' En tant qu\'entreprise en démarrage, nous nous engageons pour la durabilité environnementale et sommes passionnés par la promotion des principes de recyclage et de réutilisation des biens industriels. Notre objectif est d\'encourager les usines à réduire leur production et à minimiser la pollution en adoptant des pratiques respectueuses de l\'environnement qui privilégient l\'utilisation efficace des ressources. Nous croyons qu\'en faisant prendre conscience de l\'importance du recyclage et de la réutilisation, nous pouvons avoir un impact positif sur l\'environnement et construire un avenir plus durable.',
-                'Prenez contact avec nous',
-                'Appuyez ici pour obtenir toutes les informations dont vous avez besoin',
-                'Droits d\'auteur'
-            );
-        }
-
-        return $phrases[$index];
-    }
-
-    $langs = array('sv', 'en', 'ar', 'de', 'nl', 'it', 'fr');
-
-    $lang = $_GET['lang'];
-
-    if ($_SERVER['REQUEST_METHOD'] == 'GET' && !empty($lang) && in_array($lang, $langs)) {
-        $lang = $_GET['lang'];
-    } else {
-        $lang = 'en';
-    }
-
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -246,13 +30,13 @@
 
                 <nav id="navbar" class="navbar">
                     <ul>
-                        <li><a href="#home"><i id="house" class="fa-solid fa-house" style="color: #11466e;"></i> <?php echo translate_page(0, $lang); ?></a></li>
-                        <li><a href="#ourvision1"><?php echo translate_page(1, $lang); ?></a></li>
-                        <li><a href="#interests"><?php echo translate_page(2, $lang); ?></a></li>
-                        <li><a href="#aboutus"><?php echo translate_page(3, $lang); ?></a></li>
+                        <li><a href="#home"><i id="house" class="fa-solid fa-house" style="color: #11466e;"></i> Home</a></li>
+                        <li><a href="#ourvision1">Our Vision</a></li>
+                        <li><a href="#interests">Interests</a></li>
+                        <li><a href="#aboutus">About Us</a></li>
                         <!-- <a href="#aboutus">About Us</a>
                         <a href="#team">Team</a> -->
-                        <li><a href="#contact1"><?php echo translate_page(4, $lang); ?></a></li>
+                        <li><a href="#contact1">Get in touch</a></li>
                     </ul>
                 </nav>
 
@@ -286,8 +70,8 @@
                             <!-- <img src="https://images.interestingengineering.com/images/import/2017/08/atlas_cern.jpg" id="image1" alt="iamge"> -->
                         </div>
                         <div class="content">
-                            <h1 id="helloworld"><?php echo translate_page(5, $lang); ?></h1>
-                            <p><?php echo translate_page(6, $lang); ?></p>
+                            <h1 id="helloworld">INDUSTRIAL MACHINES EXPERTS!</h1>
+                            <p>YOU WILL NEVER REGRET WORKING WITH US</p>
                         </div>
                     </div>
 
@@ -303,59 +87,59 @@
 
         <div id="ourvision1">
             <div class="container">
-                <h2 id="ourvisiontitle"><?php echo translate_page(7, $lang); ?></h2>
-                <p id="ourvisiontitle1"><?php echo translate_page(8, $lang); ?></p>
+                <h2 id="ourvisiontitle">How do we work?</h2>
+                <p id="ourvisiontitle1">It's as simple as A B C yet very accommodating.</p>
                 <ul id="ourvision">
-                    <li><?php echo translate_page(9, $lang); ?></li>
-                    <li><?php echo translate_page(10, $lang); ?></li>
-                    <li><?php echo translate_page(11, $lang); ?></li>
+                    <li>A: We purchase your industrial machines and electric equipment.</li>
+                    <li>B: We refurbish them.</li>
+                    <li>C: We distribute the products to individuals and businesses that are in need.</li>
                 </ul>
             </div>
         </div>
 
         <div class="pros" id="interests">
             <div class="container">
-                <div style="text-align: center;"><h1 id="productsh1"><?php echo translate_page(12, $lang); ?></h1></div>
+                <div style="text-align: center;"><h1 id="productsh1">Our interest of goods</h1></div>
                 <div id="imagestext" class="imagestext">
                     <div class="image">
                         <div class="overlay">
-                            <h2><?php echo translate_page(13, $lang); ?></h2>
+                            <h2>Electric motors <br>Gearboxes<br>Pumps<br>Hydraulic parts</h2>
                         </div>
                         <img src="images/electricmotors1.jpg">
                     </div>
                     <div class="image">
                         <div class="overlay">
-                            <h2><?php echo translate_page(14, $lang); ?></h2>
+                            <h2>Valves</h2>
                         </div>
                         <img src="images/valves2.jpg" id="image3" alt="iamge">
                     </div>
                     <div class="image">
                         <div class="overlay">
-                            <h2><?php echo translate_page(15, $lang); ?></h2>
+                            <h2>Bearings</h2>
                         </div>
                         <img src="images/bearings1.jpg" id="image4" alt="iamge">
                     </div>
                     <div class="image">
                         <div class="overlay">
-                            <h2><?php echo translate_page(16, $lang); ?></h2>
+                            <h2>Automation and Pneumatics</h2>
                         </div>
                         <img src="images/automation and pneumatics1.jpg" id="image5" alt="iamge">
                     </div>
                     <div class="image">
                         <div class="overlay">
-                            <h2><?php echo translate_page(17, $lang); ?></h2>
+                            <h2>Transmissions</h2>
                         </div>
                         <img src="images/transmissions1.jpg" id="image6" alt="iamge">
                     </div>
                     <div class="image">
                         <div class="overlay">
-                            <h2><?php echo translate_page(18, $lang); ?></h2>
+                            <h2>Machinery</h2>
                         </div>
                         <img src="images/machinery1.jpg" id="image7" alt="iamge">
                     </div>
                     <div class="image">
                         <div class="overlay">
-                            <h2><?php echo translate_page(19, $lang); ?></h2>
+                            <h2>Spare parts</h2>
                         </div>
                         <img src="images/spare parts1.jpg" id="image8">
                     </div>
@@ -365,49 +149,49 @@
                     <div class="imagemobile">
                         <img id="mobileimage1" src="images/electricmotors1.jpg">
                         <div class="mobileimagesh2">
-                            <h2 id="mobileimagesh2"><?php echo translate_page(13, $lang); ?></h2>
+                            <h2 id="mobileimagesh2">Electric motors <br>Gearboxes<br>Pumps<br>Hydraulic parts</h2>
                         </div>
                     </div>
 
                     <div class="imagemobile">
                         <img id="mobileimage1" src="images/valves2.jpg">
                         <div class="mobileimagesh2">
-                            <h2 id="mobileimagesh2"><?php echo translate_page(14, $lang); ?></h2>
+                            <h2 id="mobileimagesh2">Valves</h2>
                         </div>
                     </div>
 
                     <div class="imagemobile">
                         <img id="mobileimage1" src="images/bearings1.jpg">
                         <div class="mobileimagesh2">
-                            <h2 id="mobileimagesh2"><?php echo translate_page(15, $lang); ?></h2>
+                            <h2 id="mobileimagesh2">Bearings</h2>
                         </div>
                     </div>
 
                     <div class="imagemobile">
                         <img id="mobileimage1" src="images/automation and pneumatics1.jpg">
                         <div class="mobileimagesh2">
-                            <h2 id="mobileimagesh2"><?php echo translate_page(16, $lang); ?></h2>
+                            <h2 id="mobileimagesh2">Automation and Pneumatics</h2>
                         </div>
                     </div>
 
                     <div class="imagemobile">
                         <img id="mobileimage1" src="images/transmissions1.jpg">
                         <div class="mobileimagesh2">
-                            <h2 id="mobileimagesh2"><?php echo translate_page(17, $lang); ?></h2>
+                            <h2 id="mobileimagesh2">Transmissions</h2>
                         </div>
                     </div>
 
                     <div class="imagemobile">
                         <img id="mobileimage1" src="images/machinery1.jpg">
                         <div class="mobileimagesh2">
-                            <h2 id="mobileimagesh2"><?php echo translate_page(18, $lang); ?></h2>
+                            <h2 id="mobileimagesh2">Machinery</h2>
                         </div>
                     </div>
 
                     <div class="imagemobile">
                         <img id="mobileimage1" src="images/spare parts1.jpg">
                         <div class="mobileimagesh2">
-                            <h2 id="mobileimagesh2"><?php echo translate_page(19, $lang); ?></h2>
+                            <h2 id="mobileimagesh2">Spare parts</h2>
                         </div>
                     </div>
                 </div>
@@ -417,8 +201,8 @@
         <!-- about us  -->
         <section id="aboutus" class="aboutus">
             <div class="container">
-                <h2 id="aboutustitle"><?php echo translate_page(20, $lang); ?></h2>
-                <p id="aboutusmain"><?php echo translate_page(21, $lang); ?></p>
+                <h2 id="aboutustitle">About Us</h2>
+                <p id="aboutusmain">As a startup company, we are committed to environmental sustainability and are passionate about promoting the principles of recycling and reusing industrial goods. Our goal is to encourage factories to reduce their production and minimize pollution by adopting eco-friendly practices that prioritize the efficient use of resources. We believe that by spreading awareness about the importance of recycling and reuse, we can make a positive impact on the environment and build a more sustainable future.</p>
             </div>
         </section>
 
@@ -427,7 +211,7 @@
             <div id="contactus" class="contactus">
                 <div class="container">
                     <div class="title">
-                        <h2 id="git"><?php echo translate_page(22, $lang); ?></h2>
+                        <h2 id="git">Get In Touch With Us</h2>
                     </div>
                     <div class="box">
                         <!-- form -->
@@ -495,7 +279,7 @@
                         <!-- dont forget to add location and to make the map -->
                         <div class="qrcodes">
                             <div class="qrcodestext">
-                                <a id="qrbtn" href="https://www.qrcodechimp.com/page/barametall?v=chk1685797463"><i id="infocard" class="fa-solid fa-address-card fa-xl" style="color: #fff;"></i> <?php echo translate_page(23, $lang); ?></a>
+                                <a id="qrbtn" href="https://www.qrcodechimp.com/page/barametall?v=chk1685797463"><i id="infocard" class="fa-solid fa-address-card fa-xl" style="color: #fff;"></i> Press here to get for all information you need</a>
                             </div>
                             <div class="barametallqr">
                                 <a href="https://www.qrcodechimp.com/page/barametall?v=chk1685797463"><img id="qrinfo" src="images/barametallqr.jpg"></a>
@@ -511,7 +295,7 @@
 
         <footer id="copyrightfooter">
             <div class="container">
-                <h1 id="copyright"><?php echo translate_page(24, $lang); ?> © 2023 Ba&Ra Metall</h1>
+                <h1 id="copyright">Copyright © 2023 Ba&Ra Metall</h1>
             </div>
         </footer>
         <!-- /home -->
